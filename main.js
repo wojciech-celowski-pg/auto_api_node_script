@@ -6,7 +6,7 @@ const body = {
     "agentId":4,
     "resourceId":null, // null !
     "sensorDefinitionId":391,
-    "displayName":"unique_elements_amount_change_in_7_days_programmatic dbce-c360-119lake-prod-36f0.r_ssp_openx.bid_event.", // leave dot ! w/ column name
+    "displayName":"unique_elements_amount_change_in_7_days_programmatic dbce-c360-119lake-prod-36f0.r_ssp_openx.bid_event.", // leave dot ! w/out column name
     "sensorResultName":"value",
     "changeTimeWindowDaily":"3",
     "changeTimeWindowAdHoc":"10",
@@ -24,10 +24,10 @@ const body = {
     "deployedSensorAttr5Name":"param2",
     "deployedSensorAttr6Name":"param3",
     "externalSensorKey":"unique_elements_amount_change_in_7_days_programmatic",
-    "resourceKey":"dbce-c360-119lake-prod-36f0.r_ssp_openx.bid_event." // leave dot ! w/ column name
+    "resourceKey":"dbce-c360-119lake-prod-36f0.r_ssp_openx.bid_event." // leave dot ! w/out column name
 };
 const url = 'https://aifordq.pg.com/api/deployedSensors';
-const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJFQzUyMDEiLCJuYW1lIjoiV29qY2llY2ggQ2Vsb3dza2kiLCJlbWFpbCI6ImNlbG93c2tpLndjQHBnLmNvbSIsImlhdCI6MTYxODM5ODgyMCwiZXhwIjoxNjE4NDAyNDIwfQ.NmkxXIlqrXlOncWZJXNIso3e7pQ4_bSAWKiplddHD2U';
+const token = 'Bearer '; // auth token !
 const config = {
     method: 'POST',
     headers: {
